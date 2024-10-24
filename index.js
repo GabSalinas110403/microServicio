@@ -1,6 +1,5 @@
 var express=require("express");
-var rutas=require("./rutas/usuariosRutas");
-//var rutas=require("./rutas/productosRutas");
+var rutas=require("./routes/citasRutas");
  
 var app=express();
 app.set("view engine", "ejs");

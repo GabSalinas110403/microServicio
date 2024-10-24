@@ -3,7 +3,7 @@
 <div class="container mt-5">
     <div class="card">
         <div class="card-header">
-            <h1>Usuarios</h1>
+            <h1>Registro de citas</h1>
         </div>
         <div class="card-body">
             <table class="table table-hover">
@@ -11,25 +11,25 @@
                     <tr>
                         <th>Id</th>
                         <th>Nombre</th>
-                        <th>Usuario</th>
-                        <th>Password</th>
+                        <th>Motivo</th>
+                        <th>Fecha</th>
                         <th>Editar | Borrar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <%
-                        usuarios.forEach((usuario)=>{
+                        citas.forEach((cita)=>{
 
                         
                     %>
                     <tr>
-                        <td><%= usuario.id %></td>
-                        <td><%= usuario.nombre %></td>
-                        <td><%= usuario.usuario %></td>
-                        <td><%= usuario.password %></td>
+                        <td><%= cita.id %></td>
+                        <td><%= cita.nombre %></td>
+                        <td><%= cita.motivo %></td>
+                        <td><%= cita.fecha %></td>
                         <td>
-                            <a href="/editar/<%= usuario.id %>">Editar</a>
-                            <a href="/borrar/<%= usuario.id %>">Borrar</a>
+                            <a href="/editar/<%= cita.id %>">Editar</a>
+                            <a href="/borrar/<%= cita.id %>">Borrar</a>
                         </td>
                     </tr>
                     
